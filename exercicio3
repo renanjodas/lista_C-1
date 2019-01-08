@@ -1,0 +1,52 @@
+using System;
+
+namespace Exercicio3
+{
+    class Program
+    {
+        /*Calcular estoque medio de uma peca*/
+        static void Main(string[] args)
+        {
+            /*Declaracao da variavel do tipo double */
+            double qtdadeMin, qtdadeMax, estoqueMedio;
+            /*declaracao da variavel do tipo string (texto) */
+            string peca;
+
+            /*Espaço para pular linha e aplicar design amigavel na execucao */
+            Console.WriteLine(" ");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine(" ");
+
+            /*Exibe na tela nome do programa */
+            Console.WriteLine("CALCULO DE ESTOQUE MÉDIO DE PEÇA");
+            Console.WriteLine(" ");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine(" ");
+            
+            /*Exibe Mensagem solicitando o nome da peca e le texto para atribuir a a variavel 'peca' */
+            Console.WriteLine("Informe o nome da peca:");
+            peca = Console.ReadLine();
+
+            Console.WriteLine(" ");
+
+            /*Exibe mensagem solicitando a menor quantidade da peca convertendo o texto em tipo double para atribuindo a variavel correspondente */
+            Console.WriteLine("Informe a menor quantidade desta peça em estoque:");
+            qtdadeMin = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Informe a maior quantidade desta peça em Estoque:");
+            qtdadeMax = Convert.ToDouble(Console.ReadLine());
+
+            /*realiza o calculo de media das quantidades informadas pelo usuario, atribuindo valor a variavel 'estoqueMedio' */
+            estoqueMedio = (qtdadeMin + qtdadeMax) /2;
+
+            Console.WriteLine(" ");
+            /*Exibe mensagem amigavel ao final informando o nome da peca e o estoque medio da mesma */
+            Console.WriteLine("O estoque médio de '" + peca + "' foi de " + estoqueMedio + "!");
+
+
+        }
+    }
+}
+
