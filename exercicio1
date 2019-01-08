@@ -1,0 +1,31 @@
+using System;
+
+namespace Exercicio1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*declaracao das variaveis do tipo inteiro*/
+            int numero1, numero2, resultado;
+
+            /*Exibe mensagem na tela */
+            Console.WriteLine("Informe o 1º numero:");
+
+            /*Le e converte de texto para numero inteiro aplicando assim na variavel declarada*/
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            /*Exibe mensagem na tela */
+            Console.WriteLine("Informe o 2º numero");
+
+            /*Le e converte de texto para numero inteiro aplicando assim na variavel declarada*/
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            /*aplica a variavel 'resultado', uma operação matematica com os numeros informados  */
+            resultado = (numero1 + numero2) * numero1;
+
+            /*Exibe na tela o conteudo da variavel resultado */
+            Console.WriteLine(resultado);
+        }
+    }
+}
