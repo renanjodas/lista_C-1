@@ -1,0 +1,36 @@
+using System;
+
+namespace Exercicio4
+{
+    class Program
+    {
+        /*Declarar o valores nas Variaveis A e B, respectivamente 999 e 555, após inverter os valores das variaveis utilizando uma terceira 'C' */
+        static void Main(string[] args)
+        {
+            /*Declaracao das variaveis atribuindo valores */
+            int A=999, B=555, C;
+
+            /*Exibe os valores iniciais das variaveis, ja atribuidos */
+            Console.WriteLine("Valor inicial de A = " + A);
+            Console.WriteLine("Valor inicial de B = " + B);
+
+            /*Atribui a C o valor de B */
+            C = B;
+            /*Atribui a B o valor de A */
+            B = A;
+            /*Atribui a A o valor de C que era o B */
+            A = C;
+
+            /*Atribuindo espaço entres exibicao de informações para um design mais organizado */
+            Console.WriteLine(" ");
+
+            /*Mensagem amigável do processo executado e o valores finais das variaveis*/
+            Console.WriteLine("Invertendo os valores de A e B, utilizando uma 3ª variavel vazia 'C' !");
+
+            Console.WriteLine(" ");
+            Console.WriteLine("Valor Final de A = " + A);
+            Console.WriteLine("Valor Final de B = " + B);
+
+        }
+    }
+}
