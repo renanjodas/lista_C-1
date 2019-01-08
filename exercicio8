@@ -1,0 +1,29 @@
+using System;
+
+namespace Exercicio7
+{
+    class Program
+    {   /* Calculo de media simples de 3 valores informados pelo usuario */
+        static void Main(string[] args)
+        {   /* Declaracao de variaveis do tipo double */
+            double valor1, valor2, valor3, media;
+
+            /* solicitacao e atribuicao de valores a variaveis, para calculo da media */
+            Console.WriteLine("Vamos calcular a media de 3 valores!");
+            Console.WriteLine("Informe o primeiro valor: ");
+            valor1 = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o segundo valor: ");
+            valor2 = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o terceiro valor: ");
+            valor3 = Double.Parse(Console.ReadLine());
+
+            /* Calculo da media e atribuicao do resultado para a variavel*/
+            media = (valor1 + valor2 + valor3)/3;
+
+            /* Apresentacao do resultado da media para o usuario */
+            Console.WriteLine("A media simples dos 3 numeros informados é " + media.ToString("F2"));
+        }
+    }
+}
