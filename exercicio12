@@ -1,0 +1,25 @@
+using System;
+
+namespace Exercicio12
+{
+    class Program
+    {   /* Calculo de reajuste de salario */
+        static void Main(string[] args)
+        {   /* Declaracao de variaveis */
+            double salario_inicial = 0, reajuste = 0, salario_reajustado = 0;
+
+            /* Questionamento ao usuario para atribuição de valores as variaveis */
+            Console.WriteLine("Informe o salario do funcionario");
+            salario_inicial = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a porcentagem do reajuste:");
+            reajuste = Double.Parse(Console.ReadLine());
+
+            /* Calculo de reajuste com base nos dados informados pelo usuario */
+            salario_reajustado = salario_inicial + (salario_inicial * (reajuste/100));
+
+            /* Impressao de resultado */
+            Console.WriteLine("O valor do salário reajustado é de R$ " + salario_reajustado.ToString("F2"));
+        }
+    }
+}
