@@ -1,0 +1,39 @@
+using System;
+
+namespace Exercicio09
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*Declaracao das variaveis do tipo float*/
+            float numero1, numero2, numero3, numero4, numero5, media;
+            
+            /* Impressao de mensagem amigável de apresentacao */
+            Console.WriteLine("Informe 5 números para calcularmos a media");
+
+            /* Solicitacao e leitura dos números para calculo da media */
+            Console.WriteLine("Informe o 1º número");
+            numero1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o 2º número");
+            numero2 = float.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Informe o 3º número");
+            numero3 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o 4º número");
+            numero4 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o 5º número");
+            numero5 = float.Parse(Console.ReadLine());
+
+            /* calculo e atribuicao de valor da variavel media */
+            media = (numero1 + numero2 + numero3 + numero4 + numero5) / 5;
+
+            /* Impressao do resultado */
+            Console.WriteLine("A media dos numeros informados é: " + media + "!");
+
+        }
+    }
+}
