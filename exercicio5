@@ -1,0 +1,36 @@
+using System;
+
+namespace Exercicio5
+{
+    class Program
+    {
+        /* Conversao de graus em fahrenheit */
+        static void Main(string[] args)
+        {   /*Declaracao de variaveis do tipo double */
+            double celsius, fahrenheit;
+
+            /* Apresentacao visual amigavel para o usuario */
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine(" ");
+            Console.WriteLine("Conversor de Graus Celsius em Fahrenheit");
+            Console.WriteLine(" ");
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine(" ");
+
+            /* Questionamento e atribuicao da variavel celsius, para o usuario */
+            Console.WriteLine("Informe a temperatura em Graus Celsius");
+            celsius = Convert.ToDouble(Console.ReadLine());
+            /* Calculo para conversao de graus celsius em fahrenheit, atribuindo o valor, posteriormente */
+            fahrenheit = 1.8 * celsius + 32;
+            Console.WriteLine(" ");
+
+            /* Impressao visual amigavel do valor informado pelo usuario em Celsius e consequente resultado da conversao para fahrenheit */
+            Console.WriteLine("A conversão foi finalizada: ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" Temperatura Informada em Celsius ----- | " + celsius + "°C | ---");
+            Console.WriteLine("");
+            Console.WriteLine(" Temperatura Convertida em Fahreheit -- | " + fahrenheit + "°F | ---");
+            Console.WriteLine(" ");
+        }
+    }
+}
