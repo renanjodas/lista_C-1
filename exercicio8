@@ -1,29 +1,19 @@
 using System;
 
-namespace Exercicio7
+namespace Exercicio8
 {
     class Program
-    {   /* Calculo de media simples de 3 valores informados pelo usuario */
+    {
         static void Main(string[] args)
-        {   /* Declaracao de variaveis do tipo double */
-            double valor1, valor2, valor3, media;
+        {
+            int dias, meses;
+            Console.WriteLine("Informe a quantidade de meses para saber a quantidade de dias:");
+            meses = Int32.Parse(Console.ReadLine());
 
-            /* solicitacao e atribuicao de valores a variaveis, para calculo da media */
-            Console.WriteLine("Vamos calcular a media de 3 valores!");
-            Console.WriteLine("Informe o primeiro valor: ");
-            valor1 = Double.Parse(Console.ReadLine());
+            dias = meses * 30;
 
-            Console.WriteLine("Informe o segundo valor: ");
-            valor2 = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Convertendo " + meses + " meses em dias, o resultado é " + dias + " dias! (Considerando que cada mês tenha 30 dias)");
 
-            Console.WriteLine("Informe o terceiro valor: ");
-            valor3 = Double.Parse(Console.ReadLine());
-
-            /* Calculo da media e atribuicao do resultado para a variavel*/
-            media = (valor1 + valor2 + valor3)/3;
-
-            /* Apresentacao do resultado da media para o usuario */
-            Console.WriteLine("A media simples dos 3 numeros informados é " + media.ToString("F2"));
         }
     }
 }
