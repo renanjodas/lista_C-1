@@ -1,0 +1,26 @@
+using System;
+
+namespace exercicio6
+{
+    class Program
+    {   /* Programa para informar antecessor e sucessor de um numero */
+        static void Main(string[] args)
+        {
+        
+            /*Declaracao de Variaveis do tipo int */
+            int numero, antecessor, sucessor;
+            
+            /* Solicitacao e leitura de numero, junto ao usuario */
+            Console.WriteLine("Informe um número");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            /* Calculo para atribuição das variaveis antecessor e sucessor */
+            antecessor = numero -1;
+            sucessor = numero +1;
+
+            /* Apresentacao do resultado para o usuario */
+            Console.WriteLine("O antecessor do número " + numero + " é " + antecessor + ", e o sucessor é " + sucessor + ".");
+
+        }
+    }
+}
