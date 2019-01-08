@@ -1,0 +1,28 @@
+using System;
+
+namespace Exercicio10
+{
+    class Program
+    {   /* Calculo de valor de venda de um carro */
+        static void Main(string[] args)
+        {   
+            /*declaracao das variaveis */
+            double custo_fabrica = 0, perc_distribuidor = 0, perc_imposto = 0, valor_venda = 0;
+
+            /* Questionamento de valores para atribuição de valores as variaveis */
+            Console.WriteLine("Informe o custo de fabricação do carro:");
+            custo_fabrica = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a porcentagem do distribuidor:");
+            perc_distribuidor = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a porcentagem do imposto:");
+            perc_imposto = Double.Parse(Console.ReadLine());
+
+            /* Calculo de valore de venda */
+            valor_venda = custo_fabrica + (custo_fabrica * (perc_distribuidor/100)) + (custo_fabrica * (perc_imposto/100));
+
+            /* Apresentacao do resultado para usuario */
+            Console.WriteLine("O valor de venda do carro é " + valor_venda);
+            
+        }
+    }
+}
