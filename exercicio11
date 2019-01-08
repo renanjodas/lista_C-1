@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicio11
+{
+    class Program
+    {   /* Calculo de Juros simples */
+        static void Main(string[] args)
+        {   /* Declaração de variaveis */
+            double juros = 0, capital = 0, taxa = 0;
+            int periodo = 0;
+
+            /* Questionamento ao usuário para atribuição de valores a variáveis */
+            Console.WriteLine("Informe o capital inicial:");
+            capital = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a taxa:");
+            taxa = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o período de meses:");
+            periodo = Int32.Parse(Console.ReadLine());
+
+            /* Calculo de Juros Simples */
+            juros = capital * (taxa/100) * periodo;
+
+            /* Impressão do resultado para o Usuário */
+            Console.WriteLine("O Juros Simples é de " + juros);
+            
+
+        
+        }
+    }
+}
